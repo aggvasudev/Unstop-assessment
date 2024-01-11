@@ -1,0 +1,352 @@
+.border_right{
+    border-right:1px solid #DADCE0;
+}
+a{
+    text-decoration: none !important;
+}
+
+
+
+/* sidebar Start */
+#sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #fff;
+    padding: 16px 30px;
+    transition: left 0.3s;
+  }
+
+  #sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #sidebar ul li {
+    padding: 8px;
+    color: #fff;
+  }
+
+  #sidebar ul li:hover {
+    background-color: #555;
+  }
+
+  #content {
+    margin-left: 0;
+    padding: 16px;
+    transition: margin-left 0.3s;
+  }
+
+.sidebar_admin p{
+    color: var(--Accent-New-red, #D63500);
+padding: 4px 6px;
+font-size: 10px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+border-radius: 22px;
+border: 1px solid var(--Accent-New-red, #D63500);
+background: var(--Accent-red-light, #FBEBEA);
+}
+  @media (min-width: 768px) {
+    #sidebar {
+        width: 180px;
+        position: relative;
+      left: 0;
+    }
+    .sidebar_btn{
+        display: none;
+    }
+    #content {
+      margin-left: 250px;
+    }
+    .sidebar_menus{
+        margin: 20px auto;
+    }
+    .sidebar_menus a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: var(--text-100, #1C4980);
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%;
+    }
+    .sidebar_menus svg{
+        width: 100%;
+    }
+
+  }
+  @media (max-width: 767px){
+    #sidebar{
+        width: 250px;
+    }
+    .sidebar_admin_header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .sidebar_menus svg{
+        margin-right: 6px;
+    }
+    
+  }
+
+
+
+
+
+/* Assesment overview section  */
+
+.Assessment_header{
+    border-bottom: 1px solid var(--System-Divider, #DDE5EA);
+}
+.Assessment_header h4{
+    color: var(--text-100, #1C4980);
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%;
+}
+.Assessment_header h5{
+    color: var(--Secondary-1, #0073E6);
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.Assessments_Overview{
+    border-radius: 12px;
+border: 1px solid var(--System-stroke2, #DADCE0);
+width: fit-content;
+}
+.Overview_heading{
+    margin-bottom: 16px;
+    color: var(--text-100, #1C4980);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%;
+}
+.over_num_black{
+    color: var(--text-100, #1C4980);
+font-feature-settings: 'clig' off, 'liga' off;
+margin-bottom: 0;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%;
+}
+.over_num_black span{
+    display: flex;
+    align-items: center;
+    color: var(--Status-Success, #05C165);
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 12px;
+margin-left: 4px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%;
+}
+.over_num_text{
+    color: #1C4980;
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+margin-bottom: 0;
+line-height: 140%;
+}
+.icon_lav{
+    background-color:  #EBE8FD;
+    justify-content: center;
+    min-height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 7px;
+}
+.icon_red{
+    background-color:  #FCE8EF;
+    justify-content: center;
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 7px;
+}
+.icon_blue{
+    background-color:  #E5F1FC;
+    justify-content: center;
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 7px;
+}
+
+
+
+
+
+/* my Assessment section */
+
+
+.new_btn{
+    max-width: 328px;
+    display: flex;
+padding: 30px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex: 1 0 0;
+align-self: stretch;
+border-radius: 12px;
+border: 1px dashed #DADCE0;
+background: #F6F8FA;
+}
+.new_btn .plus_btn{
+    border-radius: 72px;
+}
+
+.math_assignment{
+border-radius: 10px;
+max-width: 378px;
+width: 100%;
+padding: 30px;
+}
+.icon_brief{
+    background-color:  #EBE8FD;
+    justify-content: center;
+    min-height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    border-radius: 7px;
+}
+.math_assignment h6, .new_btn h6{
+    text-align: left;
+    color: var(--text-100, #1C4980);
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%;
+}
+.border_bottom{
+    border-bottom: 1px dashed #DADCE0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.math_assignment .date{
+    color: var(--Primary-50, #8DA4BF);
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.text_2{
+    text-align: left;
+    color: var(--text-100, #1C4980);
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%;
+}
+.math_assignment .num_text, .new_btn p{
+    text-align: left;
+    color: var(--text-100, #1C4980);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; 
+}
+.share_btn{
+    border-radius: 50px;
+    border: 1px solid var(--text-100, #1C4980);
+    background: var(--Text-White, #FFF);
+}
+.share_btn a{
+    color: #1C4980;
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%;
+}
+.people{
+width: 30px;
+height: 30px;
+padding: 5px 6px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+gap: 10px;
+color: #fff;
+    border-radius: 32.728px;
+border: 1px solid var(--Text-White, #FFF);
+background: var(--pastel-Neon-Blue, #6548EE);
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+}
+
+@media (max-width: 767px){
+    .new_assess_resp{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .math_responsive{
+        display: flex;
+    }
+    .math_responsive h6{
+        margin-bottom: 0;
+    }
+    .math_assignment .border_bottom{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .new_btn, .math_assignment{
+        max-width: unset !important;
+        width: unset !important;
+    }
+
+  }
+
+
+  .modal {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: height 0.5s ease-in-out;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: black;
+  }
+  
